@@ -11,15 +11,15 @@ import { Map } from "../map";
 const Main = () => {
   return (
     <main className={styles.main}>
-      <Hero />
-      <Cards />
+      {/* <Hero /> */}
+      {/* <Cards /> */}
       <WhyUs />
-      <section id="price">
+      {/* <section id="price">
         <Price />
       </section>
       <Reviews />
       <Social />
-      <Map />
+      <Map /> */}
     </main>
   );
 };

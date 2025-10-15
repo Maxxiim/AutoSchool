@@ -39,8 +39,10 @@ const Cards = () => {
         </div>
 
         <div className={styles.card}>
-          <h2 className={styles.cardTitle}>Рассрочка</h2>
-          <p className={styles.cardDescr}>
+          <h2 className={`${styles.cardTitle} ${styles.cardTitleSale}`}>
+            Рассрочка
+          </h2>
+          <p className={`${styles.cardDescr} ${styles.cardDescrSale}`}>
             <b>Мы предлагаем рассрочку на этапе обучения!!!</b>
           </p>
           <h3 style={contentStyle}>

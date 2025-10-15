@@ -1,3 +1,5 @@
+@use '../../styles/breakpoints' as *;
+
 .hero {
     background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
     position: relative;
@@ -86,5 +88,32 @@
 
     &:hover {
         text-shadow: 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 0 #ff0000;
+    }
+}
+
+@media(max-width: $tablet-lg) {
+    .heroBlock {
+        position: relative;
+    }
+
+    .title {
+        font-size: 35px;
+        text-align: center;
+        max-width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .phoneBlock {
+        gap: 60px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 45px;
+        color: #fff;
+        transition: all .2s ease-in-out;
+        margin-bottom: 40px;
     }
 }

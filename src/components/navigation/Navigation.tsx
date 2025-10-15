@@ -2,10 +2,19 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import styles from "./navigation.module.scss";
 
-const Navigation = ({ ulFooter }) => {
+type Props = {
+  open: boolean;
+};
+const Navigation = ({ ulFooter, open }: Props) => {
+  const fixedNav = open ? styles.ulActive : styles.ul;
+
   return (
     <nav className={styles.nav}>
-      <ul className={`${styles.ul} ${ulFooter ? styles.ulFooter : ""}`}>
+      <ul
+        className={`${styles.ul} ${fixedNav} ${
+          ulFooter ? styles.ulFooter : ""
+        }`}
+      >
         <li className={styles.li}>
           <Link className={styles.a} to="/">
             Главная

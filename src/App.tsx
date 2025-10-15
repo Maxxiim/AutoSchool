@@ -28,8 +28,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
-      <Footer />
-      <AnchorBtn />
+      {/* <Footer /> */}
+      {/* <AnchorBtn /> */}
     </>
   );
 }

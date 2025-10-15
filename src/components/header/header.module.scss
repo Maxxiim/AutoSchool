@@ -1,3 +1,5 @@
+@use '../../styles/breakpoints' as *;
+
 .header {
     background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
     width: 100%;

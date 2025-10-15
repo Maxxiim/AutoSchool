@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .whyUs {
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.10);
 }
@@ -23,5 +25,24 @@
 
     & span {
         display: inline-block;
+    }
+}
+
+@media(max-width: $mobile) {
+    .ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 10px;
+    }
+
+    .li {
+        display: flex;
+        align-items: flex-start;
+
+        & span {
+            max-width: 250px;
+            text-align: left;
+        }
     }
 }
