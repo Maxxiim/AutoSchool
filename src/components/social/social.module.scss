@@ -1,0 +1,79 @@
+.social {
+    background: #DEE9F1;
+    padding: 80px 0;
+}
+
+.socialTitle {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.socialWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.socialDescr {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300;
+    margin-right: 30px;
+
+    & span {
+        margin-left: 10px;
+        color: #58AEE6;
+    }
+}
+
+.socialApp {
+    width: 40px;
+    stroke: #000;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        stroke: #58AEE6;
+    }
+}
+
+.contacts {
+    padding: 40px 0;
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.contactsTitle {
+    color: #58AEE6;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 15px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: #58AEE6;
+    }
+
+    & svg {
+        stroke: #58AEE6;
+    }
+
+}

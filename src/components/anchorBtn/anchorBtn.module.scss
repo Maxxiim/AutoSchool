@@ -1,0 +1,24 @@
+.anchor {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    background: linear-gradient(-70deg, #4e4b4b 0%, #563535 50%);
+    position: fixed;
+    opacity: 0.7;
+    top: 55%;
+    right: 5%;
+    transition: all .2s ease-in;
+    border-radius: 4px;
+
+
+    & svg {
+        stroke: #fff;
+    }
+}
+
+.anchorActive {
+    opacity: 0;
+}
