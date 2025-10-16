@@ -117,3 +117,31 @@
         margin-bottom: 40px;
     }
 }
+
+@media(max-width: 425px) {
+    .heroBlock {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 30px;
+        max-width: 350px;
+    }
+
+    .phoneBlock {
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 340px) {
+    .title {
+        font-size: 24px;
+        text-align: center;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+}

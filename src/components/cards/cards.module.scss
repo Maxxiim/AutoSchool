@@ -169,7 +169,7 @@
         font-size: 45px;
     }
 
-    .cardTitleGibdd{
+    .cardTitleGibdd {
         top: 10%;
         left: 6%;
     }
@@ -195,7 +195,7 @@
         font-size: 45px;
     }
 
-    .cardDescrGibdd{
+    .cardDescrGibdd {
         max-width: 600px;
         top: 26%;
         left: 6%;
@@ -205,5 +205,210 @@
         width: 330px;
         top: 13%;
         right: 5%;
+    }
+}
+
+@media(max-width: 700px) {
+    .cardTitle {
+        font-size: 25px;
+    }
+
+    .cardDescr {
+        max-width: 197px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .circleImage {
+        width: 280px;
+        top: 20%;
+    }
+
+    .cardTitleSale {
+        font-size: 40px;
+    }
+
+    .cardDescrSale {
+        max-width: 500px;
+        font-size: 35px;
+    }
+
+    .cardTitleGibdd {
+        font-size: 40px;
+    }
+
+    .cardDescrGibdd {
+        max-width: 425px;
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: $mobile-sm) {
+    .card {
+        display: flex;
+        justify-content: end;
+    }
+
+    .cardTitle {
+        top: 71%;
+        left: 14%;
+        max-width: 500px;
+        line-height: 30px;
+    }
+
+    .cardDescr {
+        top: 80%;
+        max-width: 410px;
+        left: 14%;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+    .circleImage {
+        width: 270px;
+        top: 5%;
+        right: 27%;
+    }
+
+    .cardTitleSale {
+        top: 14%;
+    }
+
+    .cardDescrSale {
+        top: 30%;
+        line-height: 35px;
+        max-width: 320px;
+        font-weight: 400;
+    }
+
+}
+
+
+@media(max-width: 525px) {
+    .cardTitle {
+        font-size: 20px;
+    }
+
+    .cardDescr {
+        font-size: 20px;
+    }
+
+    .circleImage {
+        width: 270px;
+        top: 5%;
+        right: 27%;
+    }
+
+    .cardTitleSale {
+        top: 14%;
+    }
+
+    .cardDescrSale {
+        top: 25%;
+        line-height: 25px;
+    }
+
+
+    .cardTitleGibdd {
+        font-size: 40px;
+    }
+
+    .cardDescrGibdd {
+        top: 35%;
+        max-width: 425px;
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 475px) {
+    .circleImage {
+        width: 270px;
+        top: 5%;
+        right: 19%;
+    }
+
+    .cardDescr {
+        max-width: 340px;
+    }
+
+    .cardTitleSale {
+        top: 14%;
+    }
+
+    .cardDescrSale {
+        top: 25%;
+        line-height: 25px;
+    }
+}
+
+@media(max-width: 475px) {
+    .cardTitle {
+        font-size: 16px;
+    }
+
+    .circleImage {
+        width: 270px;
+        top: 5%;
+        right: 19%;
+    }
+
+    .cardDescr {
+        font-size: 16px;
+        top: 78%;
+        max-width: 280px;
+    }
+
+    .cardTitleSale {
+        top: 14%;
+    }
+
+    .cardDescrSale {
+        top: 25%;
+        line-height: 25px;
+    }
+}
+
+@media(max-width: 355px) {
+    .cardTitle {
+        font-size: 16px;
+        left: 9%;
+    }
+
+    .cardDescr {
+        font-size: 16px;
+        left: 9%;
+    }
+
+    .circleImage {
+        top: 5%;
+        right: 8%;
+    }
+
+
+    .cardTitleGibdd {
+        font-size: 30px;
+    }
+
+    .cardDescrGibdd {
+        top: 35%;
+        line-height: 30px;
+        max-width: 425px;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: $mobile-xs) {
+    .cardTitle {
+        left: 5%;
+    }
+
+    .cardDescr {
+        left: 5%;
+    }
+
+    .circleImage {
+        right: 8%;
     }
 }

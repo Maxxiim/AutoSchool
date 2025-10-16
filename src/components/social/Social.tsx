@@ -93,9 +93,9 @@ const Social = () => {
         </div>
         <div className={styles.contacts}>
           <h4 className={styles.contactsTitle}>Контакты</h4>
-          <ul className={styles.ul}>
-            <li className={styles.li}>
-              <svg
+          <ul className={styles.contactsLists}>
+            <li className={styles.contactsItem}>
+              <svg className={styles.contactsIcon}
                 width="31"
                 height="30"
                 viewBox="0 0 31 30"
@@ -112,8 +112,8 @@ const Social = () => {
               </svg>
               <a href="tel:+71231232123">+ 7 492 123 21 23</a>
             </li>
-            <li className={styles.li}>
-              <svg
+            <li className={styles.contactsItem}>
+              <svg className={styles.contactsIcon}
                 width="23"
                 height="25"
                 viewBox="0 0 23 25"
@@ -145,8 +145,8 @@ const Social = () => {
                 Беклемищева 44А
               </a>
             </li>
-            <li className={styles.li}>
-              <svg
+            <li className={styles.contactsItem}>
+              <svg className={styles.contactsIcon}
                 width="31"
                 height="22"
                 viewBox="0 0 31 22"
