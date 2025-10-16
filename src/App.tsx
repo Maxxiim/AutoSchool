@@ -21,13 +21,13 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/documents" element={<Documents />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
-      </Routes> */}
+      </Routes>
       <Footer />
       <AnchorBtn />
     </>

@@ -1,30 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./contacts.module.scss";
-import { Spinner } from "../spinner";
-import { useEffect, useState } from "react";
-
 const Contacts = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    let timer = setTimeout(() => {}, 3000);
-    clearTimeout(timer);
-  });
-
-  const handleLoad = () => {
-    setIsLoaded(true);
-  };
-
-  const test = (
-    <iframe
-      src="https://yandex.ru/ap-widget/v1/?um=constructor%3Ae9b0f5ec8da65cc8bd08c9f43dd3f0280079b93f1211c79fd123210c92a4c755&amp;source=constructor&scroll=false"
-      width="500"
-      height="500"
-      frameborder="0"
-      onLoad={handleLoad}
-    ></iframe>
-  );
-
   return (
     <section className={styles.contacts}>
       <div className="container">
@@ -46,14 +22,13 @@ const Contacts = () => {
               <p>Офис 306, 3 таж</p>
             </Link>
 
-          
-              <a
-                className={styles.email}
-                href="mailto:Skola-Lider031025@mail.ru"
-                target="_blank"
-              >
-                Skola-Lider031025@mail.ru
-              </a>
+            <a
+              className={styles.email}
+              href="mailto:Skola-Lider031025@mail.ru"
+              target="_blank"
+            >
+              Skola-Lider031025@mail.ru
+            </a>
 
             <div className={`${styles.date}`}>
               <svg
@@ -192,11 +167,9 @@ const Contacts = () => {
           </div>
 
           <div className={styles.map}>
-            {!isLoaded && <Spinner />}
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae9b0f5ec8da65cc8bd08c9f43dd3f0280079b93f1211c79fd123210c92a4c755&amp;source=constructor&scroll=false"
               width="500"
-              onLoad={handleLoad}
               height="500"
               frameBorder="0"
             ></iframe>

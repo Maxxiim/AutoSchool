@@ -3,7 +3,8 @@ import { HashLink } from "react-router-hash-link";
 import styles from "./navigation.module.scss";
 
 type Props = {
-  open: boolean;
+  open?: boolean;
+  ulFooter?: boolean;
 };
 const Navigation = ({ ulFooter, open }: Props) => {
   const fixedNav = open ? styles.ulActive : styles.ul;

@@ -1,13 +1,14 @@
 import { Logo } from "../logo";
 
 import styles from "./hero.module.scss";
+const medium = true;
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className="container">
         <div className={styles.wrapper}>
-          <Logo medium />
+          <Logo medium={medium} />
           <div className={styles.heroBlock}>
             <h1 className={styles.title}>
               <a

@@ -1,1 +1,1 @@
-export {default as AnchorBtn} from './anchorBtn'
+export { default as AnchorBtn } from "./AnchorBtn";
