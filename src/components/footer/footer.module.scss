@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .footer {
     background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
     padding: 30px;
@@ -150,5 +152,72 @@
 
     &:hover {
         color: #ff3b3b;
+    }
+}
+
+@media(max-width:940px) {
+    .privacyInfo {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+    }
+
+    .privacy {
+        &::before {
+            content: normal;
+            display: none;
+        }
+    }
+}
+
+
+@media(max-width:830px) {
+    .privacyLink {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:700px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .social {
+        margin-bottom: 30px;
+    }
+
+    .list {
+        gap: 20px;
+    }
+
+    .contacts {
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
+
+@media(max-width:510px) {
+    .list {
+        gap: 15px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .privacy {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+
+        &::before {
+            content: none;
+            height: 0;
+        }
     }
 }
