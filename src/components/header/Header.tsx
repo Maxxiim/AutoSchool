@@ -11,11 +11,15 @@ const Header = () => {
     setOpen(!open);
   };
 
+  const isOpen = () => {
+    setOpen(false);
+  };
+
   return (
     <header className={styles.header} id="header">
       <div className="container">
         <Burger toggleMenu={toggleMenu} open={open} />
-        <Navigation open={open} />
+        <Navigation open={open} isOpen={isOpen} />
       </div>
     </header>
   );

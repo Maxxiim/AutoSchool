@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .teachers {
     padding: 50px 0;
     color: #fff;
@@ -53,5 +55,24 @@
     :global(.ant-card-meta-description) {
         color: #fff;
         white-space: pre-line;
+    }
+}
+
+
+@media(max-width:$mobile-sm) {
+    .teachers{
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media(max-width:450px) {
+    .title {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:$mobile-xs) {
+    .title {
+        font-size: 19px;
     }
 }

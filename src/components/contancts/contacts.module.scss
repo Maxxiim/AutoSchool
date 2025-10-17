@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -94,4 +96,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width:970px) {
+    .wrapper {
+        flex-direction: column;
+
+    }
+
+    .info {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
 }

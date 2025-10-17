@@ -5,8 +5,10 @@ import styles from "./navigation.module.scss";
 type Props = {
   open?: boolean;
   ulFooter?: boolean;
+  isOpen?: () => void;
 };
-const Navigation = ({ ulFooter, open }: Props) => {
+
+const Navigation = ({ ulFooter, open, isOpen }: Props) => {
   const fixedNav = open ? styles.ulActive : styles.ul;
 
   return (
@@ -16,37 +18,37 @@ const Navigation = ({ ulFooter, open }: Props) => {
           ulFooter ? styles.ulFooter : ""
         }`}
       >
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <Link className={styles.a} to="/">
             Главная
           </Link>
         </li>
 
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <Link className={styles.a} to="/about">
             О нас
           </Link>
         </li>
 
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <HashLink className={styles.a} smooth to="/#price">
             Цены
           </HashLink>
         </li>
 
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <Link className={styles.a} to="/documents">
             Документы
           </Link>
         </li>
 
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <Link className={styles.a} to="/contacts">
             Контакты
           </Link>
         </li>
 
-        <li className={styles.li}>
+        <li className={styles.li} onClick={isOpen}>
           <Link className={styles.a} to="/news">
             Новости
           </Link>

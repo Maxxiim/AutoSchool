@@ -1,7 +1,9 @@
-.faq{
+@use "../../styles/breakpoints" as *;
+
+.faq {
     background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
-    padding: 20px;
 }
+
 .wrapperFaq {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,4 +16,30 @@
     font-weight: 300;
     margin-bottom: 30px;
     color: #fff;
+}
+
+@media(max-width: 1000px) {
+    .wrapperFaq {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:$mobile-sm) {
+    .ant-card-head {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .ant-card-head-wrapper {
+        overflow: visible;
+        white-space: normal;
+    }
+
+
+     .ant-card-head-title {
+            white-space: pre-line;
+    text-overflow: inherit;
+    }
 }
