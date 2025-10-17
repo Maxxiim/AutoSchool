@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/AutoSchool/",
   build: {
-    outDir: "pages",
+    outDir: "dist",
     emptyOutDir: true,
   },
 });
