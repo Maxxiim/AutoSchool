@@ -1,3 +1,5 @@
+@use "../../styles/breakpoints" as *;
+
 .policy {
     padding: 50px 0;
     background: #fff;
@@ -27,5 +29,14 @@
         margin-top: 40px;
         font-size: 14px;
         opacity: 0.8;
+    }
+}
+
+@media(max-width:$mobile-sm) {
+    .policy {
+        h2 {
+            text-align: center;
+            font-size: 17px;
+        }
     }
 }

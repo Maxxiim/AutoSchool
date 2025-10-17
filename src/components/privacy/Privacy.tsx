@@ -4,7 +4,7 @@ const Privacy = () => {
   return (
     <section className={styles.policy}>
       <div className="container">
-        <h1>Политика конфиденциальности</h1>
+        <h2>Политика конфиденциальности</h2>
         <p className={styles.subtitle}>
           (Соглашение о конфиденциальности использования личных данных)
         </p>
