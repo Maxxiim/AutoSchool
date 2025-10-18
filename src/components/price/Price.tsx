@@ -7,7 +7,7 @@ const Price = () => {
     <section className={styles.price} id="#price">
       <div className={styles.priceWrapper}>
         <div className={styles.priceCategory}>
-          <img src={categoryB} alt="Категория В" />
+          <img loading="lazy" src={categoryB} alt="Категория В" />
         </div>
         <div className={styles.info}>
           <p className={styles.descr}>

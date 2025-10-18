@@ -1,10 +1,10 @@
 import styles from "./cards.module.scss";
 
 import { Carousel } from "antd";
-import gibdd from "../../assets/cards/gibdd.png";
-import map from "../../assets/cards/map.png";
+import gibdd from "../../assets/cards/gibdd.webp";
+import map from "../../assets/cards/map.webp";
 import circleMap from "../../assets/cards/circle.png";
-import sale from "../../assets/cards/sale.png";
+import sale from "../../assets/cards/sale.webp";
 
 const Cards = () => {
   const contentStyle: React.CSSProperties = {
