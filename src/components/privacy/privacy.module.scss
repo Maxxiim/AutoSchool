@@ -1,0 +1,42 @@
+@use "../../styles/breakpoints" as *;
+
+.policy {
+    padding: 50px 0;
+    background: #fff;
+    line-height: 1.7;
+
+    h1,
+    h2 {
+        color: #e60000;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin: 10px 0 20px 25px;
+        list-style-type: disc;
+    }
+
+    a {
+        color: #e60000;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .date {
+        margin-top: 40px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+}
+
+@media(max-width:$mobile-sm) {
+    .policy {
+        h2 {
+            text-align: center;
+            font-size: 17px;
+        }
+    }
+}

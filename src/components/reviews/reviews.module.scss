@@ -1,0 +1,29 @@
+@use "../../styles/breakpoints" as *;
+
+.reviews {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reviewsTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.reviewsDescr {
+    font-size: 50px;
+    max-width: 700px;
+}
+
+@media(max-width: $mobile-sm) {
+    .reviewsTitle {
+        font-size: 30px;
+
+    }
+
+    .reviewsDescr {
+        font-size: 30px;
+
+    }
+}

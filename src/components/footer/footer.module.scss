@@ -1,0 +1,223 @@
+@use "../../styles/breakpoints" as *;
+
+.footer {
+    background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
+    padding: 30px;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.socialList {
+    gap: 30px;
+    display: flex;
+}
+
+
+.socialApp {
+    width: 30px;
+    stroke: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        stroke: #ff3b3b;
+    }
+}
+
+.contacts {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    max-width: 200px;
+    color: #fff;
+    gap: 10px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: #ff3b3b;
+    }
+
+    & svg {
+        fill: #fff;
+    }
+}
+
+.itemEmail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    gap: 10px;
+}
+
+.itemDate {
+    display: flex;
+    max-width: 200px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dateImage {
+    fill: #fff;
+    stroke: black;
+}
+
+.itemMap {
+    position: relative;
+    display: flex;
+    max-width: 190px;
+
+    & a {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.mapImage {
+    display: block;
+}
+
+.privacy {
+    font-size: 12px;
+    width: 100%;
+    border: 3pxp solid #fff;
+    color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 75px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(222, 222, 222, 0.05)
+    }
+}
+
+.privacyInfo {
+    position: relative;
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.privacyLink {
+    max-width: 600px;
+    color: #dbdbdb;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: #ff3b3b;
+    }
+}
+
+@media(max-width:940px) {
+    .privacyInfo {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+    }
+
+    .privacy {
+        &::before {
+            content: normal;
+            display: none;
+        }
+    }
+}
+
+
+@media(max-width:830px) {
+    .privacyLink {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:700px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .social {
+        margin-bottom: 30px;
+    }
+
+    .list {
+        gap: 20px;
+    }
+
+    .contacts {
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
+
+@media(max-width:510px) {
+    .list {
+        gap: 15px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .privacy {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+
+        &::before {
+            content: none;
+            height: 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@use '../../styles/breakpoints' as *;
+
+.nav {}
+
+.ul,
+.modal {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ulFooter {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    gap: 10px;
+}
+
+.li {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            border-radius: 3px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(50deg, #ff4b2b, #ff416c);
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .ulFooter{
+        display: none;
+    }
+    .ul {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        z-index: 1000;
+        transform: translateY(-100%);
+        pointer-events: none;
+        transition: transform .5s ease, opacity .4s ease-in-out;
+        background: black;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .ulActive {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .li {
+        cursor: default;
+
+        a {
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 25px;
+
+            &::after {
+                content: none;
+            }
+
+            &:hover::after {
+                opacity: 0;
+                width: 100%;
+            }
+        }
+    }
+}

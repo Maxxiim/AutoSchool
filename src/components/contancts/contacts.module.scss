@@ -1,0 +1,117 @@
+@use "../../styles/breakpoints" as *;
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.title {
+    color: #444B58;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.name {
+    color: #444B58;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 35px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+
+    &:hover {
+        color: #ff3b3b;
+    }
+}
+
+.street {
+    font-weight: 500;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 15px;
+
+    &:hover {
+        color: #ff3b3b;
+    }
+}
+
+.email {
+    display: inline-block;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+
+    &:hover {
+        color: #ff3b3b;
+    }
+}
+
+.date {
+    display: flex;
+    display: flex;
+    align-items: start;
+    color: #444B58;
+    gap: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.dateImage {
+    fill: #fff;
+    stroke: #444B58;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+    width: 250px;
+}
+
+.socialApp {
+    width: 30px;
+    stroke: #444B58;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        stroke: #ff0000;
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:970px) {
+    .wrapper {
+        flex-direction: column;
+
+    }
+
+    .info {
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}

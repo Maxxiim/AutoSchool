@@ -1,0 +1,147 @@
+@use '../../styles/breakpoints' as *;
+
+.hero {
+    background: linear-gradient(-50deg, #2D2D2D 0%, #3A2D2D 50%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroBlock {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+}
+
+.title {
+    display: inline-block;
+    max-width: 400px;
+    font-size: 35px;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+    color: #fff;
+    transition: all .2s ease-in-out;
+
+    margin-bottom: 40px;
+
+    & a {
+        display: inline-block;
+    }
+
+    & span {
+        display: block;
+    }
+
+    & :hover {
+        text-shadow: 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 0 #ff0000;
+    }
+}
+
+.phoneBlock {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & a {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+        color: #fff;
+        transition: all .2s ease-in-out;
+
+    }
+
+    & a:hover {
+        text-shadow: 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 0 #ff0000;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.phoneImage {
+    fill: #fff;
+}
+
+
+.button {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+    transition: all .2s ease-in-out;
+    margin-bottom: 40px;
+
+    &:hover {
+        text-shadow: 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 0 #ff0000;
+    }
+}
+
+@media(max-width: $tablet-lg) {
+    .heroBlock {
+        position: relative;
+    }
+
+    .title {
+        font-size: 35px;
+        text-align: center;
+        max-width: 390px;
+        margin-bottom: 30px;
+    }
+
+    .phoneBlock {
+        gap: 60px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        cursor: default;
+        text-transform: uppercase;
+        font-size: 45px;
+        color: #fff;
+        transition: all .2s ease-in-out;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 425px) {
+    .heroBlock {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 30px;
+        max-width: 350px;
+    }
+
+    .phoneBlock {
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 340px) {
+    .title {
+        font-size: 24px;
+        text-align: center;
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+}

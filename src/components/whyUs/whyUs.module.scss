@@ -1,0 +1,62 @@
+@use "../../styles/breakpoints" as *;
+
+.whyUs {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.10);
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+}
+
+.li {
+    font-size: 14px;
+    color: #585858;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
+    & img {
+        display: inline-block;
+        width: 15px;
+    }
+
+    & span {
+        display: inline-block;
+    }
+}
+
+@media(max-width: $mobile) {
+    .ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .li {
+        gap: 5px;
+
+        & span {
+            max-width: 200px;
+            width: 200px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media(max-width: 472px) {
+    .ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .li {
+        text-align: end;
+
+    }
+}
