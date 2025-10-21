@@ -46,7 +46,13 @@ const Cards = () => {
             <b>Мы предлагаем рассрочку на этапе обучения!!!</b>
           </p>
           <h3 style={contentStyle}>
-            <img className={styles.cardImage} src={sale} alt="Размытый фон" />
+            <img
+              className={styles.cardImage}
+              src={sale}
+              fetchPriority="high"
+              decoding="async"
+              alt="Размытый фон"
+            />
           </h3>
         </div>
 
