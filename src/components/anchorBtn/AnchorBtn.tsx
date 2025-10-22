@@ -21,7 +21,6 @@ const AnchorBtn = () => {
     };
   }, [debouncedScroll]);
 
-  console.log(scrollY);
   const showBtn = scrollY < 310 ? styles.anchorActive : styles.anchor;
 
   return (
