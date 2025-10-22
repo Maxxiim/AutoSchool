@@ -59,7 +59,7 @@ const Cards = () => {
         <div className={styles.card}>
           <h2 className={styles.cardTitleGibdd}>Сопровождение в ГИБДД</h2>
           <p className={styles.cardDescrGibdd}>
-            {`Регистрация в ГИБДД ${"\n"} сопровождение в ГИБДД на экзамен!${"\n"}Мы думаем и заботимся о наших учениках!`}
+            {`Регистрация в ГИБДД ${"\n"} Сопровождение в ГИБДД на экзамен!${"\n"}Мы думаем и заботимся о наших учениках!`}
           </p>
           <h3 style={contentStyle}>
             <img className={styles.cardImage} src={gibdd} alt="Размытый фон" />
