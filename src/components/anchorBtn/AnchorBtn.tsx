@@ -1,21 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import styles from "./anchorBtn.module.scss";
+import { debounce } from "../../utils/debounce";
+
 const AnchorBtn = () => {
-  const [scrollY, setScrollY] = useState(window.scrollY);
+  const [scrollY, setScrollY] = useState(0);
+  const debounceTime = 200;
+
+  const debouncedScroll = useCallback(
+    debounce(() => {
+      setScrollY(window.scrollY);
+    }, debounceTime),
+    []
+  );
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", debouncedScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedScroll);
     };
-  }, []);
+  }, [debouncedScroll]);
 
-  const showBtn = scrollY > 310 ? styles.anchor : styles.anchorActive;
+  console.log(scrollY);
+  const showBtn = scrollY < 310 ? styles.anchorActive : styles.anchor;
 
   return (
     <a className={showBtn} href="#header">
