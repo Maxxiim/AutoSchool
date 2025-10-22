@@ -12,6 +12,8 @@ const Logo = ({ medium }: Props): ReactElement => {
         className={medium ? styles.logo : styles.logoHeader}
         src={logo}
         width={350}
+        fetchPriority="high"
+        decoding="async"
         height={350}
         alt="Логотип автошколы Лидер"
       />
